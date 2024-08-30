@@ -1,6 +1,16 @@
 /*
 fonts
 */
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
 .anton-regular {
     font-family: "Anton", sans-serif;
     font-weight: 400;
@@ -41,12 +51,14 @@ body {
     overflow-x: hidden;
 }
 .gradientChange {
+
     background: linear-gradient(300deg, #ff2626, #fdc178, #ef8172);
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
     -webkit-background-clip: text;
 }
 .gradientChange:hover {
+    transition: 0.2s;
     -webkit-text-fill-color: transparent;
 }
 @keyframes gradient-animation {
@@ -79,7 +91,7 @@ body {
     }
 }
 .name {
-    font-size: 95px;
+    font-size: 115px;
 }
 .welcomeGradient {
     background: linear-gradient(300deg, #ff2626, #fdc178, #ef8172);
@@ -110,6 +122,7 @@ body {
     }
 }
 .borderGradient {
+
     background: linear-gradient(300deg, #ff2626, #fdc178, #ef8172);
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
@@ -127,5 +140,78 @@ body {
 }
 
 .welcomeGradient, .fs-3 {
-    width: 100%; /* Ensure the text takes full width to maintain alignment */
+    width: 100%;
+}
+::-webkit-scrollbar {
+    border-radius: 20px;
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(10,10,10,1);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(43,43,43,1);
+    border-radius: 40px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(300deg, #ff2626, #fdc178, #ef8172);
+}
+.nav-item.gradientChangeNav > .nav-link {
+
+    background: linear-gradient(300deg, #ff2626, #fdc178, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+    -webkit-background-clip: text;
+}
+
+.nav-item.gradientChangeNav > .nav-link:hover {
+    transition: 0.2s;
+    -webkit-text-fill-color: transparent;
+}
+.glassCard {
+    background: linear-gradient(90deg, rgba(43,43,43,1) 0%, rgba(22,22,22,1) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+.glassCard > li:hover {
+    transition: 0.2s;
+    background: rgba(43,43,43,1);
+}
+.row > .glassCard {
+    background: linear-gradient(90deg, rgba(43,43,43,1) 0%, rgba(22,22,22,1) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    height: 1400px;
+    transition: transform 0.2s;
+}
+.profilePic {
+    height: 200px;
+    width: 200px;
+    margin: 50px auto 0 auto;
+    padding: 20px;
+    border: 3px dashed rgba(255,255,255,0.18);
+    border-radius: 50%;
+}
+.glassCard > hr {
+    border-color: rgba(255,255,255,0.18) !important;
+
+}
+.hidden {
+    opacity: 0;
+}
+.show {
+    animation: fade-up .8s;
+    opacity: 1;
+}
+.li1 {
+    background-color: rgba(255, 255, 255, 0.24);
+    box-shadow: rgba(0, 0, 0, .4) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    text-align: center;
+    border-radius: 10px;
 }
