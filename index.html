@@ -14,7 +14,7 @@
     <script defer src="app.js"></script>
 </head>
 <body>
-<section class="background pb-5 mb-0 ps-5" id="blackground">
+<section class="background pb-5 mb-0" id="blackground">
     <nav class="navbar navbar-expand-lg rounded background sticky-top mb-0">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,10 +24,10 @@
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
                 <ul class="navbar-nav">
                     <li class="nav-item gradientChange mx-3">
-                        <a class="nav-link active text-light fs-4 space-mono-bold" aria-current="page" href="#">About Me</a>
+                        <a class="nav-link active text-light fs-4 space-mono-bold" aria-current="page" href="#About Me">About Me</a>
                     </li>
                     <li class="nav-item gradientChange mx-3">
-                        <a class="nav-link active text-light fs-4 space-mono-bold" aria-current="page" href="#">Portfolio</a>
+                        <a class="nav-link active text-light fs-4 space-mono-bold" aria-current="page" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item gradientChange mx-3">
                         <a class="nav-link text-light fs-4 space-mono-bold" href="#">Skills/Hobbies</a>
@@ -77,12 +77,12 @@
         </div>
     </div>
     <section id="About Me">
-        <div class="row justify-content-center w-100 hidden">
+        <div class="row justify-content-center w-100 hidden pt-5" id="aboutMeCard">
             <div class="col-8 glassCard ">
                 <img class="profilePic d-flex justify-content-center" src="./images/SaadKadhiGradPicture.png" alt="">
-                <hr class="my-5 border-2 mx-5" >
+                <hr class="my-4 border-2 mx-5" >
                 <h1 class="space-mono-bold text-center text-light display-5 welcomeGradient">About Me</h1>
-                <p class="fs-4 text-light maven-pro-regular px-5 mt-5">
+                <p class="fs-5 text-light maven-pro-regular px-5 mt-3">
                     Hello! My name is Saad, and I am Phoenix-based software developer who truly enjoys coding and appreciates it for what it is!
                     I am a recent graduate from Arizona State University, where I achieved my Bachelor's in 4 years.
                     <br>
@@ -91,34 +91,105 @@
                     My goal is to always be able to create high quality software and applications with my expanding tech stack.
                     <br>
                     <br>
-                    Check out what I have been learning listed below!
+                    Check out what I have been learning recently below!
                 </p>
+            </div>
+            <div class="col-8 glassCard">
                 <div class="row w-100">
+                    <h1 class="space-mono-bold text-center text-light display-5 welcomeGradient mt-4">Recent Tech</h1>
                     <div class="col-6">
                         <div class="row w-100">
                             <div class="col-6">
-                                <p class="fs-4 text-black space-mono-bold mx-5 li1 my-5 py-2 "><img class="" height="70px" src="./images/java-script.png" alt=""><br>JavaScript</p>
-                                <p class="fs-4 text-black space-mono-bold mx-5 li1 my-5 py-2"><img class="" height="70px" src="./images/typescript.png" alt=""><br>TypeScript </p>
-                                <p class="fs-4 text-black space-mono-bold mx-5 li1 my-5 py-2"><img class="" height="70px" src="./images/atom.png" alt=""><br>React</p>
+                                <p class="space-mono-bold li1 my-4 "><img class="mb-2" height="70px" src="./images/java-script.png" alt=""><br>JavaScript</p>
+                                <p class="space-mono-bold li1 my-4"><img class="mb-2" height="70px" src="./images/typescript.png" alt=""><br>TypeScript </p>
+                                <p class="space-mono-bold li1 my-4"><img class="mb-2" height="70px" src="./images/atom.png" alt=""><br>React</p>
                             </div>
                             <div class="col-6">
-                                <p class="fs-4 text-black space-mono-bold mx-5 li1 my-5 py-2"><img class="" height="70px" src="./images/nodejs.png" alt=""><br>Node</p>
-                                <p class="fs-4 text-black space-mono-bold mx-5 li1 my-5 py-2"><img class="" height="70px" src="./images/java.png" alt=""><br>Java</p>
-                                <p class="fs-4 text-black space-mono-bold mx-5 li1 my-5 py-2"><img class="" height="70px" src="./images/postgre.png" alt=""><br>PostgreSQL</p>
+                                <p class="space-mono-bold li1 my-4"><img class="mb-2" height="70px" src="./images/nodejs.png" alt=""><br>Node</p>
+                                <p class="space-mono-bold li1 my-4"><img class="mb-2" height="70px" src="./images/java.png" alt=""><br>Java</p>
+                                <p class="space-mono-bold li1 my-4"><img class="mb-2" height="70px" src="./images/postgre.png" alt=""><br>PostgreSQL</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <img height="520px" src="./images/cat-8863536_1280.png" alt="">
+                        <img style="margin-top: 20px" height="520px" src="./images/cat-8863536_1280.png" alt="">
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row justify-content-center w-100 hidden mt-5 pt-5 ms-0" id="portfolio">
+            <h1 class="space-mono-bold text-center text-light display-5 welcomeGradient ms-0 pb-5 mt-5" >Portfolio</h1>
+            <div class="col-4">
+                <div class="portfolioCards">
+                    <img src="./images/medicalDashboard.png" alt="">
+                    <div class="card-content space-mono-bold">
+                        <h2>
+                            Medical Dashboard
+                        </h2>
+                        <p>
+                            Dashboard created with HTML, CSS, Javascript to populate the page with patient information using a given API.
+                            Allows user to navigate through patients and view graph and text info.
+                        </p>
+                        <a href="https://github.com/saadkadhi2/Medical-Dashboard">
+                            <img class="githubLink" src="./images/github-mark-white.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="portfolioCards">
+                    <img style="height: 250px" src="./images/output-onlinegiftools.gif" alt="">
+                    <div class="card-content space-mono-bold">
+                        <h2>
+                            Threat Detection System
+                        </h2>
+                        <p>
+                            Mobile application developed in kotlin which used a YOLOv5 computer vision model to detect potential "threats" such as oncoming traffic.
+
+                        </p>
+                        <a href="https://github.com/saadkadhi2/https://github.com/saadkadhi2/ThreatDetectionCapstoneProject-">
+                            <img class="githubLink" src="./images/github-mark-white.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="portfolioCards">
+                    <img style="width: 200px;" src="./images/nimbusWeatherAppDemo.gif" alt="">
+                    <div class="card-content space-mono-bold">
+                        <h2>
+                            Nimbus Weather App
+                        </h2>
+                        <p>
+                            iOS application developed in swift that allows the user to view weather at a selected location.
+                            This fetches information from a weather API, which has its limitations and only displays weather info up to 3 days.
+                        </p>
+                        <a href="https://github.com/saadkadhi2/NimbusWeatherApp/">
+                            <img class="githubLink" src="./images/github-mark-white.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5 py-2 border-2 ms-0">
+        <div class="px-4 py-5 my-2 text-center">
+            <h1 class="space-mono-bold text-center text-light display-5 welcomeGradient pb-4">Skills/Hobbies</h1>
+            <div class="col-6 mx-auto">
+                <p class="fs-5 text-light maven-pro-regular px-5 mt-3">
+                    Both with and outside, I apply my soft skills in many areas of my life as I think it's important to strive to be a better version of yourself than yesterday!
+                    Throughout school and other activities, I have honed my skills to be self-driven, detail-oriented, and adaptable.
+                    I know I can always improve on myself in many ways, so I am always open to listening to feedback!
+                    <br>
+                    <br>
+                    See my hobbies below :)
+                </p>
             </div>
         </div>
     </section>
     <a href="credits.html" style="color: white; text-decoration: none">Credits :)</a>
 </section>
 
-<section id="Portfolio">
+<section>
 
 </section>
 <section id="Skills">
