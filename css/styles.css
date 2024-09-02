@@ -165,7 +165,7 @@ body {
 }
 
 .nav-item.gradientChangeNav > .nav-link:hover {
-    transition: 0.2s;
+
     -webkit-text-fill-color: transparent;
 }
 .glassCard {
@@ -174,9 +174,11 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.18);
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    border-radius: 5px;
 }
 .glassCard > li:hover {
-    transition: 0.2s;
+    border-radius: 5px;
+    transition: 0.3s;
     background: rgba(43,43,43,1);
 }
 .row > .glassCard {
@@ -200,7 +202,6 @@ body {
 }
 hr {
     border-color: rgba(255,255,255,0.18) !important;
-
 }
 .hidden {
     opacity: 0;
@@ -307,4 +308,13 @@ hr {
 }
 .material-symbols-outlined {
     vertical-align: middle;
+}
+.hobbyIcon {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 199, 128);
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto;
 }
