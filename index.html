@@ -14,7 +14,7 @@
     <script defer src="app.js"></script>
 </head>
 <body>
-<section class="background pb-5 mb-0" id="blackground">
+<section class="background pb-5 mb-0">
     <nav class="navbar navbar-expand-lg rounded background sticky-top mb-0">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,13 +63,13 @@
                 <img height="500px" src="./images/magicpattern-blob-1724589739216.png" alt="">
             </div>
             <div class="container">
-                <div class="row justify-content-end">
+                <div class="row welcome">
                     <div class="col-lg-9 col-md-10 col-sm-12 me-5 pe-5">
-                        <h1 class="display-5 text-light fw-bold space-mono-bold mt-1 text-end fadeAnimation"><span class="welcomeGradient">Welcome</span> to my site.</h1>
+                        <h1 class="display-5 text-light fw-bold space-mono-bold mt-1 fadeAnimation welcome"><span class="welcomeGradient">Welcome</span> to my site.</h1>
                     </div>
-                    <div class="col-2"></div>
+                    <div class="welcomeSpacing"></div>
                     <div class="col-lg-8 col-md-9 col-sm-12">
-                        <h1 class="fs-3 text-light maven-pro-regular text-end fadeAnimation">I have an ever-growing passion for coding, and I am excited showcase my existing and upcoming work!</h1>
+                        <h1 class="fs-3 text-light maven-pro-regular fadeAnimation welcome">I have an ever-growing passion for coding, and I am excited showcase my existing and upcoming work!</h1>
                     </div>
                     <div class="col-3"></div>
                 </div>
@@ -78,7 +78,7 @@
     </div>
     <section id="About Me">
         <div class="row justify-content-center w-100 hidden pt-5" id="aboutMeCard">
-            <div class="col-8 glassCard ">
+            <div class="col-8 glassCard aboutMe">
                 <img class="profilePic d-flex justify-content-center" src="./images/SaadKadhiGradPicture.png" alt="">
                 <hr class="my-4 border-2 mx-5" >
                 <h1 class="space-mono-bold text-center text-light display-5 welcomeGradient">About Me</h1>
@@ -100,26 +100,26 @@
                     <div class="col-6">
                         <div class="row w-100">
                             <div class="col-6">
-                                <p class="space-mono-bold li1 my-4 "><img class="mb-2" height="70px" src="./images/java-script.png" alt=""><br>JavaScript</p>
-                                <p class="space-mono-bold li1 my-4"><img class="mb-2" height="70px" src="./images/typescript.png" alt=""><br>TypeScript </p>
-                                <p class="space-mono-bold li1 my-4"><img class="mb-2" height="70px" src="./images/atom.png" alt=""><br>React</p>
+                                <p class="space-mono-bold li1 my-4 recentTech"><img class="mb-2" height="70px" src="./images/java-script.png" alt=""><br>JavaScript</p>
+                                <p class="space-mono-bold li1 my-4 recentTech"><img class="mb-2" height="70px" src="./images/typescript.png" alt=""><br>TypeScript</p>
+                                <p class="space-mono-bold li1 my-4 recentTech"><img class="mb-2" height="70px" src="./images/atom.png" alt=""><br>React</p>
                             </div>
                             <div class="col-6">
-                                <p class="space-mono-bold li1 my-4"><img class="mb-2" height="70px" src="./images/nodejs.png" alt=""><br>Node</p>
-                                <p class="space-mono-bold li1 my-4"><img class="mb-2" height="70px" src="./images/java.png" alt=""><br>Java</p>
-                                <p class="space-mono-bold li1 my-4"><img class="mb-2" height="70px" src="./images/postgre.png" alt=""><br>PostgreSQL</p>
+                                <p class="space-mono-bold li1 my-4 recentTech"><img class="mb-2" height="70px" src="./images/nodejs.png" alt=""><br>Node</p>
+                                <p class="space-mono-bold li1 my-4 recentTech"><img class="mb-2" height="70px" src="./images/java.png" alt=""><br>Java</p>
+                                <p class="space-mono-bold li1 my-4 recentTech"><img class="mb-2" height="70px" src="./images/postgre.png" alt=""><br>PostgreSQL</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <img style="margin-top: 20px" height="520px" src="./images/cat-8863536_1280.png" alt="">
+                        <img class="cat" style="margin-top: 20px" width="470vw" src="./images/cat-8863536_1280.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center w-100 hidden mt-5 pt-5 ms-0" id="portfolio">
             <h1 class="space-mono-bold text-center text-light display-5 welcomeGradient ms-0 pb-5 mt-5" >Portfolio</h1>
-            <div class="col-4">
+            <div class="col-4 portfolioCardCol">
                 <div class="portfolioCards">
                     <img src="./images/medicalDashboard.png" alt="">
                     <div class="card-content space-mono-bold">
@@ -136,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 portfolioCardCol">
                 <div class="portfolioCards">
                     <img style="height: 250px" src="./images/output-onlinegiftools.gif" alt="">
                     <div class="card-content space-mono-bold">
@@ -153,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 portfolioCardCol">
                 <div class="portfolioCards">
                     <img style="width: 200px;" src="./images/nimbusWeatherAppDemo.gif" alt="">
                     <div class="card-content space-mono-bold">
@@ -181,7 +181,7 @@
                     I know I can always improve on myself in many ways, so I am always open to listening to feedback!
                     <br>
                     <br>
-                    My full skills and tech stack are listed on my <a style="color:rgb(255, 199, 128)" href="AResumeAug2024%20(5).pdf"> resume</a>.
+                    My full skills and tech stack are listed on my <a style="color:rgb(255, 199, 128)" href="AResumeAug2024%20(3).pdf"> resume</a>.
                     <br>
                     <br>
                     See my hobbies below :)
@@ -198,7 +198,7 @@
                     Music has been a big part of my life.
                     Since around 7 years old I had been playing the guitar and along the way I have picked up many other instruments from being in several music programs.
                     <br>
-                    Click <a style="color:rgb(255, 199, 128)" href="https://www.youtube.com/shorts/ih6hkApxoXQ">here</a> for a video of me playing piano :)
+                    Click <a style="color:rgb(255, 199, 128)" href="">here</a> for a video of me playing piano :)
                 </p>
             </div>
             <div class="col my-5 hidden">
